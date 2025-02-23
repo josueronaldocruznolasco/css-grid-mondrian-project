@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E 
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .red {
+      width: 320px;
+      height: 414px;
+      background-color: #E72F24;
+    }
+    .white1 {
+      height: 414px;
+      width: 419px;
+      background-color: #F0F1EC;
+    }
+
+    .white2 {
+      height: 294px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+    }
+
+    .white3 {
+      height: 294px;
+      width: 360px;
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+
+    .blue {
+      height: 130px;
+      width: 50px;
+      background-color: #004592;
+      grid-row-start: 2;
+      grid-column-start: 4;
+      border-bottom: 19px solid black;
+    }
+
+    .white4 {
+      height: 176px;
+      width: 50px;
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-row-end: 5;
+      grid-column-start: 4;
+      margin-top: 10px;
+    }
+
+    .white5 {
+      height: 22px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-row-start: 4;
+    }
+
+    .yellow {
+      height: 22px;
+      width: 198px;
+      background-color: #F9D01E;
+      grid-row-start: 4;
+      grid-column-start: 2;
+    }
+
+    .gray {
+      height: 22px;
+      width: 153px;
+      background-color: #232629;
+      grid-row-start: 4;
+      grid-column-start: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="red"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="white3"></div>
+    <div class="blue"></div>
+    <div class="white4"></div>
+    <div class="white5"></div>
+    <div class="yellow"></div>
+    <div class="gray"></div>
+   </div>
+</body>
+
+</html>
